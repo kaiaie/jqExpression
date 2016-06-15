@@ -1,6 +1,6 @@
-= jqExpression: A jQuery arithmetic expression evaluator
+# jqExpression: A jQuery arithmetic expression evaluator
 
-== What is it?
+## What is it?
 
 jqExpression is a jQuery plugin that creates a button alongside a text field 
 which when clicked evaluates the text field's contents as an arithmetic 
@@ -14,6 +14,6 @@ not to call `eval` and arbitrary-precision number implementation to avoid
 rounding error.
 
 
-== How to use it
+## How to use it
 
 See the file `plugin-tester` in the repository.
