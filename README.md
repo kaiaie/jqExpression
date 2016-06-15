@@ -17,3 +17,10 @@ rounding error.
 ## How to use it
 
 See the file `plugin-tester` in the repository.
+
+
+## TODO
+
+* More intelligent rounding
+* Better formatting
+* Packaging
