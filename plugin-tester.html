@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Plugin Tester</title>
+	<head>
+	<body>
+		<form>
+			<p>
+				<label for="price-field">Price</label>: <br>
+				<input id="price-field" class="expression-field" name="price" type="text" value="" >
+			</p>
+			<p>
+				<button id="submit-button" type="submit">OK</button>
+			</p>
+		</form>
+		<script src="jquery.js"></script>
+		<script src="numeric.js"></script>
+		<script src="jqexpression-plugin.js"></script>
+		<script>
+			$(function () {
+				$(".expression-field").jqExpression();
+			});
+		</script>
+	</body>
+</html>

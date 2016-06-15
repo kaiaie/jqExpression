@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Arbitrary Precision Arithmetic Tests</title>
+		<style>
+			.test-ok {
+				background-color: #ccffcc;
+			}
+			.test-fail {
+				background-color: #ffcccc;
+			}
+		</style>
+	<head>
+	<body>
+		<div id="output">
+		</div>
+		<div style="padding-top: 8pt;">
+			<button id="btn_run" autofocus>Run</button>
+		</div>
+	
+		<script src="jquery.js"></script>
+		<script src="test-harness.js"></script>
+		<script src="numeric.js"></script>
+		<script src="tests.js"></script>
+		<script>
+			var tr = new Test.Runner(function (msg, success) {
+				$("<div></div>")
+					.addClass(success ? "test-ok" : "test-fail")
+					.text(msg)
+					.appendTo($("#output"));
+			});
+			$(function () {
+				$("#btn_run").on("click", function () {
+					$("#output").empty();
+					tr.run(arithmeticTests, parserTests);
+				});
+			});
+		</script>
+	</body>
+</html>
